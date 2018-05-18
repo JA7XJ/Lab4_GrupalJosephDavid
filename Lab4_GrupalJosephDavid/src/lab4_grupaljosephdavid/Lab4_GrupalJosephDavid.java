@@ -103,22 +103,22 @@ public class Lab4_GrupalJosephDavid {
                 j.get(i).getPieza().add(new Duendes("D1",1,6,Color.WHITE, "Madera",1));
                 j.get(i).getPieza().add(new Duendes("D1",1,9,Color.WHITE, "Madera",1));
             }else if(i == 1){
-                j.get(i).getPieza().add(new Dragon("F1", 0, 2, Color.BLACK, "Madera", 1));
-                j.get(i).getPieza().add(new Dragon("F2", 0, 7, Color.WHITE, "Madera", 1));
-                j.get(i).getPieza().add(new Dragon("F3", 1, 5, Color.WHITE, "Madera", 1));
-                j.get(i).getPieza().add(new Caballeros("C1", 0, 0, Color.WHITE, "Madera", 1));
-                j.get(i).getPieza().add(new Caballeros("C2", 0, 9, Color.WHITE, "Madera", 1));
-                j.get(i).getPieza().add(new Caballeros("C3", 0, 4, Color.WHITE, "Madera", 1));
-                j.get(i).getPieza().add(new Arquero("A1", 0, 3, Color.WHITE, "Madera", 1));
-                j.get(i).getPieza().add(new Arquero("A1", 0, 6, Color.WHITE, "Madera", 1));
-                j.get(i).getPieza().add(new Arquero("A1", 1,2 , Color.WHITE, "Madera", 1));
-                j.get(i).getPieza().add(new Arquero("A1",1,7,Color.WHITE,"Madera",1));
-                j.get(i).getPieza().add(new Rey ("R",0,4,Color.WHITE,"Madera",1));
-                j.get(i).getPieza().add(new Mago("M",0,5,Color.WHITE,"Madera",1));
-                j.get(i).getPieza().add(new Duendes("D1",1,0,Color.WHITE, "Madera",1));
-                j.get(i).getPieza().add(new Duendes("D1",1,3,Color.WHITE, "Madera",1));
-                j.get(i).getPieza().add(new Duendes("D1",1,6,Color.WHITE, "Madera",1));
-                j.get(i).getPieza().add(new Duendes("D1",1,9,Color.WHITE, "Madera",1));
+                j.get(i).getPieza().add(new Dragon("F1", 9, 2, Color.BLACK, "Madera", 1));
+                j.get(i).getPieza().add(new Dragon("F2", 9, 7, Color.BLACK, "Madera", 1));
+                j.get(i).getPieza().add(new Dragon("F3", 8, 4, Color.BLACK, "Madera", 1));
+                j.get(i).getPieza().add(new Caballeros("C1", 9, 0, Color.BLACK, "Madera", 1));
+                j.get(i).getPieza().add(new Caballeros("C2", 9, 9, Color.BLACK, "Madera", 1));
+                j.get(i).getPieza().add(new Caballeros("C3", 8, 5, Color.BLACK, "Madera", 1));
+                j.get(i).getPieza().add(new Arquero("A1", 9, 3, Color.BLACK, "Madera", 1));
+                j.get(i).getPieza().add(new Arquero("A1", 9, 6, Color.BLACK, "Madera", 1));
+                j.get(i).getPieza().add(new Arquero("A1", 8,2 , Color.BLACK, "Madera", 1));
+                j.get(i).getPieza().add(new Arquero("A1",8,7,Color.BLACK,"Madera",1));
+                j.get(i).getPieza().add(new Rey ("R",9,5,Color.BLACK,"Madera",1));
+                j.get(i).getPieza().add(new Mago("M",9,4,Color.BLACK,"Madera",1));
+                j.get(i).getPieza().add(new Duendes("D1",8,0,Color.BLACK, "Madera",1));
+                j.get(i).getPieza().add(new Duendes("D1",8,3,Color.BLACK, "Madera",1));
+                j.get(i).getPieza().add(new Duendes("D1",8,6,Color.BLACK, "Madera",1));
+                j.get(i).getPieza().add(new Duendes("D1",8,9,Color.BLACK, "Madera",1));
             }
         }
         for (int i = 0; i < mat.length; i++) {
