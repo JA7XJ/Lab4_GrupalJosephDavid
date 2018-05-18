@@ -34,7 +34,7 @@ public abstract class Piezas {
         return material;
     }
 
-    public void setMaterial(String matereal) {
+    public void setMaterial(String material) {
         this.material = material;
     }
 
