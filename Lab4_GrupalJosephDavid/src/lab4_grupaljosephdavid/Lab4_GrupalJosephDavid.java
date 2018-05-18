@@ -14,6 +14,8 @@ import java.util.Scanner;
  */
 public class Lab4_GrupalJosephDavid {
 public static Scanner sc=new Scanner(System.in);
+public int x=0;
+public int y=0;
     /**
      * @param args the command line arguments
      */

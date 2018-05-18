@@ -19,16 +19,14 @@ public class Dragon extends Piezas{
     public Dragon() {
     }
 
-    public Dragon(String nombre, Color color) {
-        super(color);
+    public Dragon(String nombre, Color color, String material) {
+        super(color, material);
         this.nombre = nombre;
     }
     
     
     @Override
     public void mover() {
-        int x=0;
-        int y=0;
         int x2=0;
         int y2=0;
         System.out.println("Ingrese las corrdenadas en x");
