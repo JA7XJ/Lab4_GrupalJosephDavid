@@ -12,23 +12,13 @@ import javafx.scene.paint.Color;
  * @author david
  */
 public abstract class Piezas {
-    private int nombre;
     private Color color;
 
     public Piezas() {
     }
 
-    public Piezas(int nombre, Color color) {
-        this.nombre = nombre;
+    public Piezas(Color color) {
         this.color = color;
-    }
-
-    public int getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(int nombre) {
-        this.nombre = nombre;
     }
 
     public Color getColor() {

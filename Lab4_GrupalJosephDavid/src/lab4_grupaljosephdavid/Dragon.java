@@ -9,6 +9,11 @@ package lab4_grupaljosephdavid;
  *
  * @author david
  */
-public class Dragon {
+public class Dragon extends Piezas{
+
+    @Override
+    public void mover() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
