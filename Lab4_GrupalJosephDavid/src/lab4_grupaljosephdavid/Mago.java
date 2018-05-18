@@ -60,7 +60,7 @@ public class Mago extends Piezas{
         y2=sc.nextInt();
         int abs1=Math.abs(x2-x);
         int abs2=Math.abs(y2-y);
-        if (abs1==abs2) {
+        if ((abs1==abs2)&&(x==x2||y==y2)) {
             y=y2;
             x=2;
             
