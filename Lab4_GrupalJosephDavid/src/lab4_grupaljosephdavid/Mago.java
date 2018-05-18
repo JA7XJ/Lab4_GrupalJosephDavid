@@ -17,14 +17,14 @@ public class Mago extends Piezas{
     public Mago() {
     }
 
-    public Mago(String nombre, Color color) {
-        super(color);
+    public Mago(String nombre, Color color, String material) {
+        super(color, material);
         this.nombre = nombre;
     }
     
     @Override
     public void mover() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
     
 }
