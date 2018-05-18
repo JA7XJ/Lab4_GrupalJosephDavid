@@ -17,16 +17,22 @@ public class Dragon extends Piezas{
     private String nombre;
     private int x;
     private int y;
+    private int x2;
+    private int y2;
 
     public Dragon() {
     }
 
-    public Dragon(String nombre, int x, int y, Color color, String material, int status) {
+    public Dragon(String nombre, int x, int y, int x2, int y2, Color color, String material, int status) {
         super(color, material, status);
         this.nombre = nombre;
         this.x = x;
         this.y = y;
+        this.x2 = x2;
+        this.y2 = y2;
     }
+
+    
 
     public static Scanner getSc() {
         return sc;
@@ -59,15 +65,29 @@ public class Dragon extends Piezas{
     public void setY(int y) {
         this.y = y;
     }
-    
 
+    public int getX2() {
+        return x2;
+    }
+
+    public void setX2(int x2) {
+        this.x2 = x2;
+    }
+
+    public int getY2() {
+        return y2;
+    }
+
+    public void setY2(int y2) {
+        this.y2 = y2;
+    }
+    
+    
     
     
     
     @Override
     public void mover() {
-        int x2=0;
-        int y2=0;
         System.out.println("Ingrese las corrdenadas en x");
         x2=sc.nextInt();
         System.out.println("Ingrese las coordenadas en y");
