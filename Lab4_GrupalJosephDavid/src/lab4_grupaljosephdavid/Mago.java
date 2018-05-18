@@ -19,8 +19,8 @@ public class Mago extends Piezas{
     public Mago() {
     }
 
-    public Mago(String nombre, Color color, String material) {
-        super(color, material);
+    public Mago(String nombre, Color color, String material, int status) {
+        super(color, material, status);
         this.nombre = nombre;
     }
 

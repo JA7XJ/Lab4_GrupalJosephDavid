@@ -14,13 +14,15 @@ import javafx.scene.paint.Color;
 public abstract class Piezas {
     private Color color;
     private String material;
+    private int status;
     
     public Piezas() {
     }
 
-    public Piezas(Color color, String material) {
+    public Piezas(Color color, String material, int status) {
         this.color = color;
         this.material = material;
+        this.status = status;
     }
 
     public Color getColor() {
@@ -39,6 +41,14 @@ public abstract class Piezas {
         this.material = material;
     }
 
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
+    }
+    
     @Override
     public String toString() {
         return "Piezas{" + "color=" + color + ", material=" + material + '}';

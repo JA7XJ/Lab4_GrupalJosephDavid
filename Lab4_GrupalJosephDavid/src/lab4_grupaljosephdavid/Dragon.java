@@ -19,8 +19,8 @@ public class Dragon extends Piezas{
     public Dragon() {
     }
 
-    public Dragon(String nombre, Color color, String material) {
-        super(color, material);
+    public Dragon(String nombre, Color color, String material, int status) {
+        super(color, material, status);
         this.nombre = nombre;
     }
     
