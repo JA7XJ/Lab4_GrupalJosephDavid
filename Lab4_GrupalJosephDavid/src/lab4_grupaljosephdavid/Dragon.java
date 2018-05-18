@@ -27,13 +27,20 @@ public class Dragon extends Piezas{
     
     @Override
     public void mover() {
-        int x;
-        int y;
+        int x=0;
+        int y=0;
+        int x2=0;
+        int y2=0;
         System.out.println("Ingrese las corrdenadas en x");
-        x=sc.nextInt();
+        x2=sc.nextInt();
         System.out.println("Ingrese las coordenadas en y");
-        y=sc.nextInt();
-        
+        y2=sc.nextInt();
+        int abs1=Math.abs(x2-x);
+        int abs2=Math.abs(y2-y);
+        if (abs1==abs2) {
+            y=y2;
+            
+        }
     }
     
 }
