@@ -19,7 +19,8 @@ public static Scanner sc=new Scanner(System.in);
      */
     static ArrayList<jugador> j=new ArrayList();
     public static void main(String[] args) {
-        String[][] matriz=new String[9][9];
+        String[][] matriz=new String[10][10];
+        Inicio(matriz);
         char r='s';
         while (r=='s'||r=='S') {
             System.out.print("¿Desea agregar jugador?[S/N]: ");
@@ -76,8 +77,12 @@ public static Scanner sc=new Scanner(System.in);
     public static void juego(){
         
     }
-    public static void Inicio(){
-        
+    public static void Inicio(String [][] mat){
+        for (int i = 0; i < mat.length; i++) {
+            for (int k = 0; k < mat[0].length; k++) {
+                mat[i][k]="[ ]";
+            }
+        }
     }
     
 }
