@@ -18,8 +18,9 @@ public abstract class Piezas {
     public Piezas() {
     }
 
-    public Piezas(Color color) {
+    public Piezas(Color color, String material) {
         this.color = color;
+        this.material = material;
     }
 
     public Color getColor() {
