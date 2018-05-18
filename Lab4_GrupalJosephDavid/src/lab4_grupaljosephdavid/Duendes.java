@@ -74,6 +74,13 @@ public class Duendes extends Piezas {
     
     @Override
     public void mover() {
-        
+        System.out.println("Ingrese las corrdenadas en x");
+        x2=sc.nextInt();
+        System.out.println("Ingrese las coordenadas en y");
+        y2=sc.nextInt();
+        if (x==x2||y==y2) {
+            y=y2;
+            x=x2;
+        }
     }
 }
