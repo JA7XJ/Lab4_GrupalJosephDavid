@@ -11,7 +11,7 @@ import javafx.scene.paint.Color;
  *
  * @author david
  */
-public class Piezas {
+public abstract class Piezas {
     private int nombre;
     private Color color;
 
@@ -38,5 +38,5 @@ public class Piezas {
     public void setColor(Color color) {
         this.color = color;
     }
-    
+    public abstract void mover();
 }

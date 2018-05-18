@@ -15,7 +15,11 @@ public class Lab4_GrupalJosephDavid {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here 
+        String[][] matriz=new String[9][9];
+        
+    }
+    public static void Inicio(){
+        
     }
     
 }
