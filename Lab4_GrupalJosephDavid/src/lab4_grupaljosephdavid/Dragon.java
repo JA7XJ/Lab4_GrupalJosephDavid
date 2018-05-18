@@ -23,6 +23,13 @@ public class Dragon extends Piezas{
     public Dragon() {
     }
 
+    public Dragon(String nombre, int x, int y, Color color, String material, int status) {
+        super(color, material, status);
+        this.nombre = nombre;
+        this.x = x;
+        this.y = y;
+    }
+    
     public Dragon(String nombre, int x, int y, int x2, int y2, Color color, String material, int status) {
         super(color, material, status);
         this.nombre = nombre;

@@ -5,6 +5,7 @@
  */
 package lab4_grupaljosephdavid;
 
+import java.util.Scanner;
 import javafx.scene.paint.Color;
 
 /**
@@ -21,6 +22,13 @@ public class Caballeros extends Piezas{
     public Caballeros() {
     }
 
+    public Caballeros(String nombre, int x, int y, Color color, String material, int status) {
+        super(color, material, status);
+        this.nombre = nombre;
+        this.x = x;
+        this.y = y;
+    }
+    
     public Caballeros(int x2, int y2, String nombre, int x, int y, Color color, String material, int status) {
         super(color, material, status);
         this.x2 = x2;
@@ -75,9 +83,22 @@ public class Caballeros extends Piezas{
 
     @Override
     public void mover() {
-        if (x2==x||y2==y) {
-            x=x2;
-            y=y2;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Desea mover en x o en y?[x][y]");
+        char ans=sc.next().charAt(0);
+        if (ans =='Y'||ans=='y') {
+            System.out.println("Ingrese movimiento en Y: ");
+            y2=sc.nextInt();
+        }else {
+            System.out.println("Ingrese movimiento en X: ");
+            x2=sc.nextInt();
+        }
+        if ((x2==x||y2==y)) {
+            if (x2==x+1||y2==y+1) {
+                x2=x;
+                y2=y;
+            }
+            
         }
     }
     
