@@ -13,7 +13,8 @@ import javafx.scene.paint.Color;
  */
 public abstract class Piezas {
     private Color color;
-
+    private String material;
+    
     public Piezas() {
     }
 
@@ -28,5 +29,21 @@ public abstract class Piezas {
     public void setColor(Color color) {
         this.color = color;
     }
+
+    public String getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(String matereal) {
+        this.material = material;
+    }
+
+    @Override
+    public String toString() {
+        return "Piezas{" + "color=" + color + ", material=" + material + '}';
+    }
+    
+    
+    
     public abstract void mover();
 }
