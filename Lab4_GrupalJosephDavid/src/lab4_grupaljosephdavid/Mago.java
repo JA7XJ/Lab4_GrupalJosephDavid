@@ -17,13 +17,17 @@ public class Mago extends Piezas{
     private String nombre;
     private int x;
     private int y;
+    private int x2;
+    private int y2;
     
     public Mago() {
     }
 
-    public Mago(String nombre, Color color, String material, int status) {
+    public Mago(String nombre, Color color, String material, int status, int x2, int y2) {
         super(color, material, status);
         this.nombre = nombre;
+        this.x2 = x2;
+        this.y2 = y2;
     }
 
     public String getNombre() {
@@ -49,11 +53,25 @@ public class Mago extends Piezas{
     public void setY(int y) {
         this.y = y;
     }
+
+    public int getX2() {
+        return x2;
+    }
+
+    public void setX2(int x2) {
+        this.x2 = x2;
+    }
+
+    public int getY2() {
+        return y2;
+    }
+
+    public void setY2(int y2) {
+        this.y2 = y2;
+    }
     
     @Override
     public void mover() {
-        int x2=0;
-        int y2=0;
         System.out.println("Ingrese las corrdenadas en x");
         x2=sc.nextInt();
         System.out.println("Ingrese las coordenadas en y");
@@ -63,8 +81,6 @@ public class Mago extends Piezas{
         if ((abs1==abs2)&&(x==x2||y==y2)) {
             y=y2;
             x=2;
-            
-            
         }
     }
     
