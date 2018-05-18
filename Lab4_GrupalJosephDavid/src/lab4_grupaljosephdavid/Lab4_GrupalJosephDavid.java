@@ -14,8 +14,6 @@ import java.util.Scanner;
  */
 public class Lab4_GrupalJosephDavid {
 public static Scanner sc=new Scanner(System.in);
-public int x=0;
-public int y=0;
     /**
      * @param args the command line arguments
      */
@@ -56,16 +54,22 @@ public int y=0;
             if (op==1) {
                 for (int i = 0; i < j.size(); i++) {
                     System.out.println(i+")"+j.toString());
-                }
-                
+                }              
             }
             if (op==2) {
-                
+                for (int i = 0; i < j.size(); i++) {
+                    System.out.println(i+")"+j.toString());
+                }   
+                System.out.println("----------------------------------------------");
+                System.out.print("Ingrese la posicion a eliminar: ");
+                int pos=sc.nextInt();
+                j.remove(pos);
             }
             if (op==3) {
                 System.out.println("Opcion inexistente");
             }
-            
+            System.out.print("¿Desea realizar otra accion?[S/N]: ");
+            r=sc.next().charAt(0);
         }
         
     }
