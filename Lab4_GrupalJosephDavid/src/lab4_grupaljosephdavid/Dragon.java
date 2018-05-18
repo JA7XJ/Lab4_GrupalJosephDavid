@@ -5,6 +5,7 @@
  */
 package lab4_grupaljosephdavid;
 
+import java.util.Scanner;
 import javafx.scene.paint.Color;
 
 /**
@@ -12,6 +13,7 @@ import javafx.scene.paint.Color;
  * @author david
  */
 public class Dragon extends Piezas{
+    public static Scanner sc=new Scanner(System.in);
     private String nombre;
 
     public Dragon() {
@@ -25,7 +27,13 @@ public class Dragon extends Piezas{
     
     @Override
     public void mover() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        int x;
+        int y;
+        System.out.println("Ingrese las corrdenadas en x");
+        x=sc.nextInt();
+        System.out.println("Ingrese las coordenadas en y");
+        y=sc.nextInt();
+        
     }
     
 }
