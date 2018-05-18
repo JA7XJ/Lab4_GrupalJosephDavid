@@ -5,6 +5,8 @@
  */
 package lab4_grupaljosephdavid;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Joseph
@@ -16,6 +18,7 @@ public class jugador {
     private String lugar;
     private int edad;
     private String sexo;
+    private ArrayList pieza=new ArrayList();
 
     public jugador() {
     }
@@ -28,6 +31,8 @@ public class jugador {
         this.edad = edad;
         this.sexo = sexo;
     }
+
+    
 
     public String getNombre() {
         return nombre;
@@ -76,6 +81,15 @@ public class jugador {
     public void setSexo(String sexo) {
         this.sexo = sexo;
     }
+
+    public ArrayList getPieza() {
+        return pieza;
+    }
+
+    public void setPieza(ArrayList pieza) {
+        this.pieza = pieza;
+    }
+    
 
     @Override
     public String toString() {
