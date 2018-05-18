@@ -23,6 +23,13 @@ public class Duendes extends Piezas {
     public Duendes() {
     }
 
+    public Duendes(String nombre, int x, int y, Color color, String material, int status) {
+        super(color, material, status);
+        this.nombre = nombre;
+        this.x = x;
+        this.y = y;
+    }
+    
     public Duendes(String nombre, int x, int y, Color color, String material, int status, int x2, int y2) {
         super(color, material, status);
         this.nombre = nombre;

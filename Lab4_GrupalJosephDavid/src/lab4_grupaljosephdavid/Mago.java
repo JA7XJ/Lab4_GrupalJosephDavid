@@ -23,12 +23,23 @@ public class Mago extends Piezas{
     public Mago() {
     }
 
-    public Mago(String nombre, Color color, String material, int status, int x2, int y2) {
+    public Mago(String nombre, int x, int y, Color color, String material, int status) {
         super(color, material, status);
         this.nombre = nombre;
+        this.x = x;
+        this.y = y;
+    }
+    
+    public Mago(String nombre, int x, int y, int x2, int y2, Color color, String material, int status) {
+        super(color, material, status);
+        this.nombre = nombre;
+        this.x = x;
+        this.y = y;
         this.x2 = x2;
         this.y2 = y2;
     }
+
+    
 
     public String getNombre() {
         return nombre;
