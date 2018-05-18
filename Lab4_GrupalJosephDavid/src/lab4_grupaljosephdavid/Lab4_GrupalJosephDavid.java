@@ -58,12 +58,12 @@ public class Lab4_GrupalJosephDavid {
             int op = sc.nextInt();
             if (op == 1) {
                 for (int i = 0; i < j.size(); i++) {
-                    System.out.println(i + ")" + j.toString());
+                    System.out.println(i + ")" + j.get(i));
                 }
             }
             if (op == 2) {
                 for (int i = 0; i < j.size(); i++) {
-                    System.out.println(i + ")" + j.toString());
+                    System.out.println(i + ")" + j.get(i));
                 }
                 System.out.println("----------------------------------------------");
                 System.out.print("Ingrese la posicion a eliminar: ");
