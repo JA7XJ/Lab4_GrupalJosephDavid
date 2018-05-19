@@ -40,6 +40,11 @@ public class Rey extends Piezas{
     public void setY(int y) {
         this.y = y;
     }
+
+    @Override
+    public String toString() {
+        return "{"+ nombre +"}";
+    }
     
     @Override
     public void mover() {

@@ -78,6 +78,11 @@ public class Duendes extends Piezas {
     public void setY2(int y2) {
         this.y2 = y2;
     }
+
+    @Override
+    public String toString() {
+        return "{"+ nombre +"}";
+    }
     
     @Override
     public void mover() {

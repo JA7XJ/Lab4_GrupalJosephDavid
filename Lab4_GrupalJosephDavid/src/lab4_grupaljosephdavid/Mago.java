@@ -95,5 +95,10 @@ public class Mago extends Piezas{
             x=2;
         }
     }
+
+    @Override
+    public String toString() {
+        return "{"+ nombre +"}";
+    }
     
 }

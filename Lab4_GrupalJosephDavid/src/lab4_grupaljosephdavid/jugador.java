@@ -90,7 +90,7 @@ public class jugador {
         this.pieza = pieza;
     }
     
-
+    
     @Override
     public String toString() {
         return "jugador{" + "nombre=" + nombre + ", user=" + user + ", points=" + points + ", lugar=" + lugar + ", edad=" + edad + ", sexo=" + sexo + '}';
