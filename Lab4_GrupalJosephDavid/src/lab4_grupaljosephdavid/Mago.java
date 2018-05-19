@@ -81,6 +81,7 @@ public class Mago extends Piezas{
         this.y2 = y2;
     }
     
+    
     @Override
     public void mover() {
         System.out.println("Ingrese las corrdenadas en x");
