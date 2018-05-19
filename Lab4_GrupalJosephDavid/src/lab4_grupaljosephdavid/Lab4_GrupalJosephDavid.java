@@ -48,10 +48,14 @@ public class Lab4_GrupalJosephDavid {
             System.out.print("¿Desea comenzar el juego?[S/N]: ");
             char rrr = sc.next().charAt(0);
             if (rrr == 's') {
-                matriz=Inicio(matriz);
+                matriz = Inicio(matriz);
                 for (int i = 0; i < matriz.length; i++) {
                     for (int k = 0; k < matriz[i].length; k++) {
-                        System.out.print(matriz[i][k]);
+                        if (matriz[i][k] == null) {
+                            System.out.print("{* }");
+                        } else {
+                            System.out.print(matriz[i][k]);
+                        }
                     }
                     System.out.println("");
                 }
@@ -90,11 +94,11 @@ public class Lab4_GrupalJosephDavid {
     }
 
     public static Piezas[][] Inicio(Piezas[][] mat) {
-        for (int i = 0; i < mat.length; i++) {
+        /*for (int i = 0; i < mat.length; i++) {
             for (int k = 0; k < mat[0].length; k++) {
                 mat[i][k] = (new Blanco());
             }
-        }
+        }*/
         for (int i = 0; i < j.size(); i++) {
             if (i == 0) {
                 j.get(i).getPieza().add(new Dragon("F1", 0, 2, Color.WHITE, "Madera", 1));
@@ -128,44 +132,44 @@ public class Lab4_GrupalJosephDavid {
                 mat[1][0] = (Piezas) j.get(i).getPieza().get(12);
                 mat[1][3] = (Piezas) j.get(i).getPieza().get(13);
                 mat[1][6] = (Piezas) j.get(i).getPieza().get(14);
-                mat [1][9]=(Piezas) j.get(i).getPieza().get(15);
+                mat[1][9] = (Piezas) j.get(i).getPieza().get(15);
             } else if (i == 1) {
                 j.get(i).getPieza().add(new Dragon("F1", 9, 2, Color.BLACK, "Madera", 1));
                 j.get(i).getPieza().add(new Dragon("F2", 9, 7, Color.BLACK, "Madera", 1));
                 j.get(i).getPieza().add(new Dragon("F3", 8, 4, Color.BLACK, "Madera", 1));
-                mat [9][2]=(Piezas) j.get(i).getPieza().get(0);
-                mat [9][7]=(Piezas) j.get(i).getPieza().get(1);
-                mat [8][4]=(Piezas) j.get(i).getPieza().get(2);
+                mat[9][2] = (Piezas) j.get(i).getPieza().get(0);
+                mat[9][7] = (Piezas) j.get(i).getPieza().get(1);
+                mat[8][4] = (Piezas) j.get(i).getPieza().get(2);
                 j.get(i).getPieza().add(new Caballeros("C1", 9, 0, Color.BLACK, "Madera", 1));
                 j.get(i).getPieza().add(new Caballeros("C2", 9, 9, Color.BLACK, "Madera", 1));
                 j.get(i).getPieza().add(new Caballeros("C3", 8, 5, Color.BLACK, "Madera", 1));
-                mat [9][0]=(Piezas) j.get(i).getPieza().get(3);
-                mat [9][9]=(Piezas) j.get(i).getPieza().get(4);
-                mat [8][5]=(Piezas) j.get(i).getPieza().get(5);
+                mat[9][0] = (Piezas) j.get(i).getPieza().get(3);
+                mat[9][9] = (Piezas) j.get(i).getPieza().get(4);
+                mat[8][5] = (Piezas) j.get(i).getPieza().get(5);
                 j.get(i).getPieza().add(new Arquero("A1", 9, 3, Color.BLACK, "Madera", 1));
                 j.get(i).getPieza().add(new Arquero("A1", 9, 6, Color.BLACK, "Madera", 1));
                 j.get(i).getPieza().add(new Arquero("A1", 8, 2, Color.BLACK, "Madera", 1));
                 j.get(i).getPieza().add(new Arquero("A1", 8, 7, Color.BLACK, "Madera", 1));
-                mat [9][3]=(Piezas) j.get(i).getPieza().get(6);
-                mat [9][6]=(Piezas) j.get(i).getPieza().get(7);
-                mat [8][2]=(Piezas) j.get(i).getPieza().get(8);
-                mat [8][7]=(Piezas) j.get(i).getPieza().get(9);
+                mat[9][3] = (Piezas) j.get(i).getPieza().get(6);
+                mat[9][6] = (Piezas) j.get(i).getPieza().get(7);
+                mat[8][2] = (Piezas) j.get(i).getPieza().get(8);
+                mat[8][7] = (Piezas) j.get(i).getPieza().get(9);
                 j.get(i).getPieza().add(new Rey("R", 9, 5, Color.BLACK, "Madera", 1));
-                mat [9][5]=(Piezas) j.get(i).getPieza().get(10);
+                mat[9][5] = (Piezas) j.get(i).getPieza().get(10);
                 j.get(i).getPieza().add(new Mago("M", 9, 4, Color.BLACK, "Madera", 1));
-                mat [9][4]=(Piezas) j.get(i).getPieza().get(11);
+                mat[9][4] = (Piezas) j.get(i).getPieza().get(11);
                 j.get(i).getPieza().add(new Duendes("D1", 8, 0, Color.BLACK, "Madera", 1));
                 j.get(i).getPieza().add(new Duendes("D1", 8, 3, Color.BLACK, "Madera", 1));
                 j.get(i).getPieza().add(new Duendes("D1", 8, 6, Color.BLACK, "Madera", 1));
                 j.get(i).getPieza().add(new Duendes("D1", 8, 9, Color.BLACK, "Madera", 1));
-                mat [8][0]=(Piezas) j.get(i).getPieza().get(12);
-                mat [8][3]=(Piezas) j.get(i).getPieza().get(13);
-                mat [8][6]=(Piezas) j.get(i).getPieza().get(14);
-                mat [8][9]=(Piezas) j.get(i).getPieza().get(15);
+                mat[8][0] = (Piezas) j.get(i).getPieza().get(12);
+                mat[8][3] = (Piezas) j.get(i).getPieza().get(13);
+                mat[8][6] = (Piezas) j.get(i).getPieza().get(14);
+                mat[8][9] = (Piezas) j.get(i).getPieza().get(15);
             }
         }
 
-    return mat;
+        return mat;
 
-}
+    }
 }
